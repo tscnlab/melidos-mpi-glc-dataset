@@ -1,0 +1,1482 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/tscnlab/glc-metadata-validator/main/schemas/3.0.2/dataset.schema.json",
+  "version": "3.0.2",
+  "title": "Dataset Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the metadata schema used by this dataset",
+      "examples": [
+        "3.0.2"
+      ]
+    },
+    "dataset_internal_id": {
+      "type": "string",
+      "description": "Unique identifier of dataset",
+      "examples": [
+        "EXAMPLE_DATASET_P001"
+      ]
+    },
+    "dataset_participant_associated": {
+      "type": "boolean",
+      "description": "Whether this dataset is associated with one participant. True requires a valid participant ID. For datasets containing no participant-associated data, set this to false and omit the participant ID.",
+      "examples": [
+        true
+      ]
+    },
+    "dataset_crossref": {
+      "type": "object",
+      "description": "Crossreferencing information linking to study, participant, and device",
+      "additionalProperties": false,
+      "properties": {
+        "dataset_crossref_study_id": {
+          "type": "string",
+          "description": "Internal ID for study",
+          "examples": [
+            "EXAMPLE_STUDY_001"
+          ]
+        },
+        "dataset_crossref_participant_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Internal ID for participant. Required for participant-associated datasets and omitted otherwise.",
+          "examples": [
+            "EXAMPLE_P001"
+          ]
+        }
+      },
+      "required": [
+        "dataset_crossref_study_id"
+      ],
+      "examples": [
+        {
+          "dataset_crossref_study_id": "EXAMPLE_STUDY_001",
+          "dataset_crossref_participant_id": "EXAMPLE_P001"
+        }
+      ]
+    },
+    "dataset_timezone": {
+      "type": "string",
+      "format": "iana-timezone",
+      "description": "IANA time zone name for data collection, such as Europe/Berlin",
+      "examples": [
+        "Europe/Berlin"
+      ]
+    },
+    "dataset_location": {
+      "type": "array",
+      "description": "Latitude/Longitude of data collection",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "examples": [
+        [
+          48.1372,
+          11.5756
+        ]
+      ]
+    },
+    "dataset_variable_terms": {
+      "type": "array",
+      "description": "Dataset-specific controlled vocabulary for variable_term values. Include 'other' as fallback.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "term": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Short controlled token (e.g., melEDI)",
+            "examples": [
+              "illuminance"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Human-readable label for the controlled term",
+            "examples": [
+              "Illuminance"
+            ]
+          }
+        },
+        "required": [
+          "term"
+        ]
+      },
+      "examples": [
+        [
+          {
+            "term": "illuminance",
+            "label": "Illuminance"
+          }
+        ]
+      ]
+    },
+    "dataset_file": {
+      "type": "array",
+      "description": "Dataset descriptors",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dataset_file_modality": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "description": "Controlled data modalities contained in this same-structure file group",
+            "items": {
+              "type": "string",
+              "enum": [
+                "light",
+                "accelerometry",
+                "temperature",
+                "humidity",
+                "air_pollution",
+                "questionnaire",
+                "diary",
+                "wear_log",
+                "other"
+              ]
+            },
+            "examples": [
+              [
+                "light"
+              ]
+            ]
+          },
+          "dataset_file_modality_other": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Human-readable modality required when dataset_file_modality contains other",
+            "examples": [
+              "sleep diary"
+            ]
+          },
+          "dataset_file_modality_other_type": {
+            "type": "string",
+            "enum": [
+              "sensor",
+              "non_device"
+            ],
+            "description": "Whether an other modality is sensor-generated or non-device data",
+            "examples": [
+              "non_device"
+            ]
+          },
+          "dataset_file_instrument": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Instrument and collection method for a questionnaire, diary, or wear-log file group",
+            "properties": {
+              "instrument_type": {
+                "type": "string",
+                "enum": [
+                  "questionnaire",
+                  "diary",
+                  "wear_log"
+                ]
+              },
+              "instrument_name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "collection_method": {
+                "type": "string",
+                "enum": [
+                  "paper",
+                  "software",
+                  "other"
+                ]
+              },
+              "software_name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "collection_method_other": {
+                "type": "string",
+                "minLength": 1
+              },
+              "recorded_by": {
+                "type": "string",
+                "enum": [
+                  "participant",
+                  "study_staff",
+                  "other"
+                ],
+                "description": "Who entered or completed the questionnaire, diary, or wear log",
+                "examples": [
+                  "participant"
+                ]
+              },
+              "recorded_by_other": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Description of who entered or completed the record when recorded_by is other",
+                "examples": [
+                  "trained research assistant"
+                ]
+              }
+            },
+            "required": [
+              "instrument_type",
+              "instrument_name",
+              "collection_method",
+              "recorded_by"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "collection_method": {
+                      "const": "software"
+                    }
+                  },
+                  "required": [
+                    "collection_method"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "software_name"
+                  ]
+                },
+                "else": {
+                  "not": {
+                    "required": [
+                      "software_name"
+                    ]
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "collection_method": {
+                      "const": "other"
+                    }
+                  },
+                  "required": [
+                    "collection_method"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "collection_method_other"
+                  ]
+                },
+                "else": {
+                  "not": {
+                    "required": [
+                      "collection_method_other"
+                    ]
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "recorded_by": {
+                      "const": "other"
+                    }
+                  },
+                  "required": [
+                    "recorded_by"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "recorded_by_other"
+                  ]
+                },
+                "else": {
+                  "not": {
+                    "required": [
+                      "recorded_by_other"
+                    ]
+                  }
+                }
+              }
+            ],
+            "examples": [
+              {
+                "recorded_by": "participant"
+              }
+            ]
+          },
+          "dataset_file_crossref_device_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Internal ID of the device that generated or is directly described by this file group. For questionnaires, diaries, and wear logs, provide this only when the complete file group unambiguously concerns one device; omit device metadata when it concerns multiple devices collectively or device attribution is unknown. Shared timing alone is not sufficient.",
+            "examples": [
+              "EXAMPLE_DEVICE_001"
+            ]
+          },
+          "dataset_file_device_location": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Specific placement of the acquisition device, such as non-dominant wrist, bedside table, or building rooftop",
+            "examples": [
+              "non-dominant wrist"
+            ]
+          },
+          "dataset_file_device_location_type": {
+            "type": "string",
+            "enum": [
+              "body_worn",
+              "participant_proximal",
+              "environmental"
+            ],
+            "description": "Relationship of the acquisition device to the participant or wider environment. Use body_worn when the device is attached to or worn by the participant, such as on the wrist or chest. Use participant_proximal when the device is intentionally positioned near the participant but is not worn, such as on a bedside table or beside a workstation. Use environmental when the device measures the wider environment without being positioned relative to a participant, such as on a building rooftop or at an outdoor monitoring station.",
+            "examples": [
+              "body_worn"
+            ]
+          },
+          "dataset_file_temporal_resolution": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Temporal resolution of records in this file group",
+            "properties": {
+              "resolution_type": {
+                "type": "string",
+                "enum": [
+                  "fixed_interval",
+                  "event_based"
+                ]
+              },
+              "value": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "resolution_type"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "resolution_type": {
+                      "const": "fixed_interval"
+                    }
+                  },
+                  "required": [
+                    "resolution_type"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "value",
+                    "unit"
+                  ]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "resolution_type": {
+                      "const": "event_based"
+                    }
+                  },
+                  "required": [
+                    "resolution_type"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "value"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "unit"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "examples": [
+              {
+                "value": 30,
+                "unit": "s"
+              }
+            ]
+          },
+          "dataset_file_description": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Concise human-readable description of the file group’s contents, scope, and intended interpretation. Use when important information is not represented by the structured file-group metadata.",
+            "examples": [
+              "Thirty-second light and activity measurements."
+            ]
+          },
+          "dataset_file_instructions": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Instructions associated with collection of this file group",
+            "examples": [
+              "Wear the device continuously except during bathing."
+            ]
+          },
+          "dataset_file_names": {
+            "type": "array",
+            "description": "File names corresponding",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "examples": [
+              [
+                "data/EXAMPLE_P001_light.csv"
+              ]
+            ]
+          },
+          "dataset_file_format": {
+            "type": "string",
+            "description": "File format",
+            "examples": [
+              "text/csv"
+            ]
+          },
+          "dataset_file_encoding": {
+            "type": "array",
+            "description": "File text encoding (e.g., UTF-8)",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "examples": [
+              [
+                "UTF-8"
+              ]
+            ]
+          },
+          "dataset_file_timezone": {
+            "type": "string",
+            "format": "iana-timezone",
+            "description": "IANA time zone name for the data files, such as Europe/Berlin",
+            "examples": [
+              "Europe/Berlin"
+            ]
+          },
+          "dataset_file_datetime": {
+            "type": "object",
+            "description": "Datetime metadata that applies to every file in this file group",
+            "additionalProperties": false,
+            "properties": {
+              "dataset_file_datetime_source": {
+                "type": "string",
+                "enum": [
+                  "column",
+                  "collection"
+                ],
+                "description": "Whether datetime information comes from file columns or a fixed collection date/time value",
+                "examples": [
+                  "column"
+                ]
+              },
+              "dataset_file_datetime_date": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Date/datetime column name when source is column, or fixed collection date/time value when source is collection",
+                "examples": [
+                  "timestamp"
+                ]
+              },
+              "dataset_file_datetime_dateformat": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Format of the date/datetime column or fixed collection date/time value. For consistency, use YYYY-MM-DD for a date or YYYY-MM-DD HH:mm:ss for a datetime when possible.",
+                "examples": [
+                  "YYYY-MM-DD HH:mm:ss"
+                ]
+              },
+              "dataset_file_datetime_time": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Separate time column name when source is column. Omit when no separate time column is used.",
+                "examples": [
+                  "time"
+                ]
+              },
+              "dataset_file_datetime_timeformat": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Format of the separate time column when present. Omit when no separate time column is used.",
+                "examples": [
+                  "HH:mm:ss"
+                ]
+              }
+            },
+            "required": [
+              "dataset_file_datetime_source",
+              "dataset_file_datetime_date",
+              "dataset_file_datetime_dateformat"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "dataset_file_datetime_source": {
+                      "const": "column"
+                    },
+                    "dataset_file_datetime_time": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "dataset_file_datetime_source",
+                    "dataset_file_datetime_time"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "dataset_file_datetime_timeformat"
+                  ],
+                  "properties": {
+                    "dataset_file_datetime_timeformat": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "dataset_file_datetime_source": {
+                      "const": "collection"
+                    }
+                  },
+                  "required": [
+                    "dataset_file_datetime_source"
+                  ]
+                },
+                "then": {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "dataset_file_datetime_time"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "dataset_file_datetime_timeformat"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "examples": [
+              {
+                "dataset_file_datetime_source": "column",
+                "dataset_file_datetime_date": "timestamp",
+                "dataset_file_datetime_dateformat": "YYYY-MM-DD HH:mm:ss"
+              }
+            ]
+          },
+          "dataset_file_role": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "supporting"
+            ],
+            "description": "Role of this file group in the dataset. Primary file groups contain the principal data used for analysis; supporting file groups provide related context or supporting information.",
+            "examples": [
+              "primary"
+            ]
+          },
+          "dataset_file_data_state": {
+            "type": "string",
+            "enum": [
+              "raw",
+              "processed"
+            ],
+            "description": "State of the data in this file group. Raw data have not undergone preprocessing; processed data have undergone transformations described in dataset_file_preprocessing.",
+            "examples": [
+              "raw"
+            ]
+          },
+          "dataset_file_header_row": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Optional 1-based row index of the true header row in the file; use when preamble lines exist",
+            "examples": [
+              1
+            ]
+          },
+          "dataset_file_preprocessing": {
+            "type": "object",
+            "description": "Preprocessing information",
+            "additionalProperties": false,
+            "properties": {
+              "dataset_file_preprocessing_bol": {
+                "type": "boolean",
+                "description": "Indicator whether preprocessing was applied",
+                "examples": [
+                  true
+                ]
+              },
+              "dataset_file_preprocessing_desc": {
+                "type": "array",
+                "description": "Description of what preprocessing was applied",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "examples": [
+                  [
+                    "Converted timestamps to ISO 8601."
+                  ]
+                ]
+              }
+            },
+            "required": [
+              "dataset_file_preprocessing_bol"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "dataset_file_preprocessing_bol": {
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "dataset_file_preprocessing_bol"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "dataset_file_preprocessing_desc"
+                  ],
+                  "properties": {
+                    "dataset_file_preprocessing_desc": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "examples": [
+              {
+                "dataset_file_preprocessing_bol": true,
+                "dataset_file_preprocessing_desc": [
+                  "Converted timestamps to ISO 8601."
+                ]
+              }
+            ]
+          },
+          "dataset_file_variables": {
+            "type": "array",
+            "description": "Variables contained in the dataset, units and location (column)",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "dataset_file_variables_name": {
+                  "type": "string",
+                  "description": "Variable name as contained in the dataset",
+                  "examples": [
+                    "illuminance"
+                  ]
+                },
+                "dataset_file_variables_labels": {
+                  "type": "string",
+                  "description": "Variable name as clear name",
+                  "examples": [
+                    "Illuminance"
+                  ]
+                },
+                "dataset_file_variables_description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Optional full description, questionnaire prompt, or interpretation of the variable. Keep the label concise and use this field for complete source wording and instructions.",
+                  "examples": [
+                    "Photopic illuminance measured at the participant’s wrist."
+                  ]
+                },
+                "dataset_file_variables_units": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "UCUM unit code or a precise custom unit. Required for numeric and integer variables and omitted for string, boolean, and factor variables. Do not use placeholders such as N/A or Unknown.",
+                  "not": {
+                    "enum": [
+                      "N/A",
+                      "NA",
+                      "n/a",
+                      "Unknown",
+                      "unknown"
+                    ]
+                  },
+                  "examples": [
+                    "lx"
+                  ]
+                },
+                "dataset_file_variables_calibration": {
+                  "type": "string",
+                  "description": "Description of transformation that should be applied to the variable for calibration, based only on researchers' calibration",
+                  "examples": [
+                    "Apply the manufacturer-provided calibration coefficients."
+                  ]
+                },
+                "dataset_file_variables_type": {
+                  "type": "string",
+                  "enum": [
+                    "string",
+                    "boolean",
+                    "numeric",
+                    "integer",
+                    "factor"
+                  ],
+                  "description": "Expected value type for non-empty cells in this variable column. Boolean values may be encoded as true/false or 0/1. Select factor only for categorical variables with a finite set of defined levels, such as 0 = No and 1 = Yes. A numerical factor, coefficient, ratio, proportion, percentage, score, count, or other quantitatively meaningful value must instead be declared numeric or integer.",
+                  "x-glc-validation": [
+                    "Every non-empty value in the corresponding data column must match the declared type; empty values are reported as warnings."
+                  ],
+                  "examples": [
+                    "numeric"
+                  ]
+                },
+                "dataset_file_variables_factor_levels": {
+                  "type": "array",
+                  "minItems": 1,
+                  "description": "Permitted categorical values and their meanings when the variable type is factor",
+                  "x-glc-validation": [
+                    "Factor values must be unique, and every non-empty value in the data column must match one of them."
+                  ],
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "value": {
+                        "type": "string",
+                        "description": "Permitted factor value as represented in the tabular file",
+                        "examples": [
+                          "1"
+                        ]
+                      },
+                      "label": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "Human-readable meaning of the factor value",
+                        "examples": [
+                          "Illuminance"
+                        ]
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Optional additional explanation of the factor level",
+                        "examples": [
+                          "Participant selected “Yes”."
+                        ]
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "label"
+                    ]
+                  },
+                  "examples": [
+                    [
+                      {
+                        "value": "0",
+                        "label": "No"
+                      },
+                      {
+                        "value": "1",
+                        "label": "Yes"
+                      }
+                    ]
+                  ]
+                },
+                "dataset_file_variables_term": {
+                  "type": "object",
+                  "description": "Semantic term metadata for this variable",
+                  "additionalProperties": false,
+                  "properties": {
+                    "variable_term": {
+                      "type": "string",
+                        "description": "Controlled semantic term for this variable",
+                        "x-glc-validation": [
+                          "The value must be declared in dataset_variable_terms or use the reserved fallback term other."
+                        ],
+                        "examples": [
+                          "illuminance"
+                      ]
+                    },
+                    "variable_name": {
+                      "type": "string",
+                      "description": "Custom variable name required when variable_term is 'other'",
+                      "examples": [
+                        "custom_light_metric"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "variable_term"
+                  ],
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "variable_term": {
+                            "const": "other"
+                          }
+                        },
+                        "required": [
+                          "variable_term"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "variable_name"
+                        ],
+                        "properties": {
+                          "variable_name": {
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "examples": [
+                    {
+                      "variable_term": "illuminance"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "dataset_file_variables_name",
+                "dataset_file_variables_labels",
+                "dataset_file_variables_type",
+                "dataset_file_variables_term"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "dataset_file_variables_type": {
+                        "const": "factor"
+                      }
+                    },
+                    "required": [
+                      "dataset_file_variables_type"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "dataset_file_variables_factor_levels"
+                    ]
+                  },
+                  "else": {
+                    "not": {
+                      "required": [
+                        "dataset_file_variables_factor_levels"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "dataset_file_variables_type": {
+                        "enum": [
+                          "numeric",
+                          "integer"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "dataset_file_variables_type"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "dataset_file_variables_units"
+                    ]
+                  },
+                  "else": {
+                    "not": {
+                      "required": [
+                        "dataset_file_variables_units"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "examples": [
+              [
+                {
+                  "dataset_file_variables_name": "illuminance",
+                  "dataset_file_variables_labels": "Illuminance",
+                  "dataset_file_variables_units": "lx",
+                  "dataset_file_variables_type": "numeric"
+                }
+              ]
+            ]
+          },
+          "primary_variables": {
+            "type": "array",
+            "description": "Principal or default variables used when analysing this file group. Values must be a subset of dataset_file_variables_name.",
+            "x-glc-validation": [
+              "Required and non-empty for primary file groups."
+            ],
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "maxItems": 4,
+            "uniqueItems": true,
+            "examples": [
+              [
+                "illuminance"
+              ]
+            ]
+          }
+        },
+        "required": [
+          "dataset_file_modality",
+          "dataset_file_temporal_resolution",
+          "dataset_file_instructions",
+          "dataset_file_names",
+          "dataset_file_format",
+          "dataset_file_encoding",
+          "dataset_file_timezone",
+          "dataset_file_datetime",
+          "dataset_file_role",
+          "dataset_file_data_state",
+          "dataset_file_preprocessing",
+          "dataset_file_variables"
+        ],
+        "allOf": [
+          {
+            "not": {
+              "allOf": [
+                {
+                  "properties": {
+                    "dataset_file_modality": {
+                      "contains": {
+                        "enum": [
+                          "light",
+                          "accelerometry",
+                          "temperature",
+                          "humidity",
+                          "air_pollution"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "properties": {
+                    "dataset_file_modality": {
+                      "contains": {
+                        "enum": [
+                          "questionnaire",
+                          "diary",
+                          "wear_log"
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "enum": [
+                      "light",
+                      "accelerometry",
+                      "temperature",
+                      "humidity",
+                      "air_pollution"
+                    ]
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "dataset_file_crossref_device_id",
+                "dataset_file_device_location",
+                "dataset_file_device_location_type"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "enum": [
+                      "questionnaire",
+                      "diary",
+                      "wear_log"
+                    ]
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "dataset_file_instrument"
+              ],
+              "properties": {
+                "dataset_file_modality": {
+                  "maxItems": 1
+                }
+              }
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "dataset_file_instrument"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "enum": [
+                      "questionnaire",
+                      "diary",
+                      "wear_log"
+                    ]
+                  }
+                }
+              }
+            },
+            "then": {
+              "if": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "dataset_file_crossref_device_id"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "dataset_file_device_location"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "dataset_file_device_location_type"
+                    ]
+                  }
+                ]
+              },
+              "then": {
+                "required": [
+                  "dataset_file_crossref_device_id",
+                  "dataset_file_device_location",
+                  "dataset_file_device_location_type"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "const": "questionnaire"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "dataset_file_instrument": {
+                  "properties": {
+                    "instrument_type": {
+                      "const": "questionnaire"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "const": "diary"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "dataset_file_instrument": {
+                  "properties": {
+                    "instrument_type": {
+                      "const": "diary"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "const": "wear_log"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "dataset_file_instrument": {
+                  "properties": {
+                    "instrument_type": {
+                      "const": "wear_log"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality": {
+                  "contains": {
+                    "const": "other"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "dataset_file_modality_other",
+                "dataset_file_modality_other_type"
+              ]
+            },
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "dataset_file_modality_other"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "dataset_file_modality_other_type"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality_other_type": {
+                  "const": "sensor"
+                }
+              },
+              "required": [
+                "dataset_file_modality_other_type"
+              ]
+            },
+            "then": {
+              "required": [
+                "dataset_file_crossref_device_id",
+                "dataset_file_device_location",
+                "dataset_file_device_location_type"
+              ],
+              "not": {
+                "properties": {
+                  "dataset_file_modality": {
+                    "contains": {
+                      "enum": [
+                        "questionnaire",
+                        "diary",
+                        "wear_log"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_modality_other_type": {
+                  "const": "non_device"
+                }
+              },
+              "required": [
+                "dataset_file_modality_other_type"
+              ]
+            },
+            "then": {
+              "allOf": [
+                {
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "dataset_file_crossref_device_id"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "dataset_file_device_location"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "dataset_file_device_location_type"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "not": {
+                    "properties": {
+                      "dataset_file_modality": {
+                        "contains": {
+                          "enum": [
+                            "light",
+                            "accelerometry",
+                            "temperature",
+                            "humidity",
+                            "air_pollution"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_role": {
+                  "const": "primary"
+                }
+              },
+              "required": [
+                "dataset_file_role"
+              ]
+            },
+            "then": {
+              "required": [
+                "primary_variables"
+              ],
+              "properties": {
+                "primary_variables": {
+                  "type": "array",
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_data_state": {
+                  "const": "raw"
+                }
+              },
+              "required": [
+                "dataset_file_data_state"
+              ]
+            },
+            "then": {
+              "properties": {
+                "dataset_file_preprocessing": {
+                  "properties": {
+                    "dataset_file_preprocessing_bol": {
+                      "const": false
+                    }
+                  },
+                  "not": {
+                    "required": [
+                      "dataset_file_preprocessing_desc"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "dataset_file_data_state": {
+                  "const": "processed"
+                }
+              },
+              "required": [
+                "dataset_file_data_state"
+              ]
+            },
+            "then": {
+              "properties": {
+                "dataset_file_preprocessing": {
+                  "required": [
+                    "dataset_file_preprocessing_desc"
+                  ],
+                  "properties": {
+                    "dataset_file_preprocessing_bol": {
+                      "const": true
+                    },
+                    "dataset_file_preprocessing_desc": {
+                      "type": "array",
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "examples": [
+        [
+          {
+            "dataset_file_names": [
+              "data/EXAMPLE_P001_light.csv"
+            ]
+          }
+        ]
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "dataset_participant_associated": {
+            "const": true
+          }
+        },
+        "required": [
+          "dataset_participant_associated"
+        ]
+      },
+      "then": {
+        "properties": {
+          "dataset_crossref": {
+            "required": [
+              "dataset_crossref_participant_id"
+            ],
+            "properties": {
+              "dataset_crossref_participant_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dataset_participant_associated": {
+            "const": false
+          }
+        },
+        "required": [
+          "dataset_participant_associated"
+        ]
+      },
+      "then": {
+        "properties": {
+          "dataset_crossref": {
+            "not": {
+              "required": [
+                "dataset_crossref_participant_id"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dataset_file": {
+            "contains": {
+              "properties": {
+                "dataset_file_device_location_type": {
+                  "enum": [
+                    "body_worn",
+                    "participant_proximal"
+                  ]
+                }
+              },
+              "required": [
+                "dataset_file_device_location_type"
+              ]
+            }
+          }
+        },
+        "required": [
+          "dataset_file"
+        ]
+      },
+      "then": {
+        "properties": {
+          "dataset_participant_associated": {
+            "const": true
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "schema_version",
+    "dataset_internal_id",
+    "dataset_participant_associated",
+    "dataset_crossref",
+    "dataset_timezone",
+    "dataset_location",
+    "dataset_variable_terms",
+    "dataset_file"
+  ],
+  "$comment": "Missing-value convention: Optional properties with no value must be omitted rather than represented as null, an empty string, or an empty array."
+}

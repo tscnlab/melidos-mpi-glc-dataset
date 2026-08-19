@@ -1,0 +1,347 @@
+[
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_1020",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "1020",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_1382",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "1382",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_1431",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "1431",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_1607",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "1607",
+    "device_calibration_date": "2023-09-04",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_1740",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "1740",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_2540",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "2540",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_2663",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "2663",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AL_2793",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActLumus AL0101",
+    "device_serial_number": "2793",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "actlumus-al0101",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_1604",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "1604",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_2916",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "2916",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_2923",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "2923",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_3037",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "3037",
+    "device_calibration_date": "2023-09-04",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_3123",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "3123",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_3132",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "3132",
+    "device_calibration_date": "2023-08-14",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "device_internal_id": "MPI_AT_3587",
+    "device_manufacturer": "Condor Instruments",
+    "device_model": "ActTrust2",
+    "device_serial_number": "3587",
+    "device_calibration_date": "2023-10-30",
+    "device_datasheet_id": "acttrust2",
+    "device_sensors": [
+      {
+        "device_sensor_type": "spectral, photopic, and melanopic light sensor"
+      },
+      {
+        "device_sensor_type": "triaxial accelerometer"
+      },
+      {
+        "device_sensor_type": "temperature sensor"
+      },
+      {
+        "device_sensor_type": "capacitive off-wrist sensor"
+      }
+    ]
+  }
+]

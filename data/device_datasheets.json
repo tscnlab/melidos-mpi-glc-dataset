@@ -1,0 +1,302 @@
+[
+  {
+    "schema_version": "3.0.2",
+    "datasheet_id": "actlumus-al0101",
+    "datasheet_manufacturer": "Condor Instruments",
+    "datasheet_type": "wearable actigraph",
+    "datasheet_sensor_modality": [
+      "light",
+      "accelerometer",
+      "temperature",
+      "other"
+    ],
+    "datasheet_sensor_modality_other": "Capacitive off-wrist detection",
+    "datasheet_model": "ActLumus AL0101",
+    "datasheet_calibration_range": "Not documented in the source metadata.",
+    "datasheet_calibration_notes": "The source metadata states that the devices were not calibrated and provides no calibration records. Because GLC 3.0.2 requires a calibration date, the earliest documented deployment date is used as a transparent provisional proxy; it must not be interpreted as evidence of calibration.",
+    "datasheet_channel": [
+      {
+        "datasheet_channel_nr": 1,
+        "datasheet_channel_name": "is.implicit"
+      },
+      {
+        "datasheet_channel_nr": 2,
+        "datasheet_channel_name": "MS"
+      },
+      {
+        "datasheet_channel_nr": 3,
+        "datasheet_channel_name": "EVENT"
+      },
+      {
+        "datasheet_channel_nr": 4,
+        "datasheet_channel_name": "TEMPERATURE"
+      },
+      {
+        "datasheet_channel_nr": 5,
+        "datasheet_channel_name": "EXT.TEMPERATURE"
+      },
+      {
+        "datasheet_channel_nr": 6,
+        "datasheet_channel_name": "ORIENTATION"
+      },
+      {
+        "datasheet_channel_nr": 7,
+        "datasheet_channel_name": "PIM"
+      },
+      {
+        "datasheet_channel_nr": 8,
+        "datasheet_channel_name": "PIMn"
+      },
+      {
+        "datasheet_channel_nr": 9,
+        "datasheet_channel_name": "TAT"
+      },
+      {
+        "datasheet_channel_nr": 10,
+        "datasheet_channel_name": "TATn"
+      },
+      {
+        "datasheet_channel_nr": 11,
+        "datasheet_channel_name": "ZCM"
+      },
+      {
+        "datasheet_channel_nr": 12,
+        "datasheet_channel_name": "ZCMn"
+      },
+      {
+        "datasheet_channel_nr": 13,
+        "datasheet_channel_name": "LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 14,
+        "datasheet_channel_name": "AMB.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 15,
+        "datasheet_channel_name": "RED.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 16,
+        "datasheet_channel_name": "GREEN.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 17,
+        "datasheet_channel_name": "BLUE.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 18,
+        "datasheet_channel_name": "IR.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 19,
+        "datasheet_channel_name": "UVA.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 20,
+        "datasheet_channel_name": "UVB.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 21,
+        "datasheet_channel_name": "STATE"
+      },
+      {
+        "datasheet_channel_nr": 22,
+        "datasheet_channel_name": "CAP_SENS_1"
+      },
+      {
+        "datasheet_channel_nr": 23,
+        "datasheet_channel_name": "CAP_SENS_2"
+      },
+      {
+        "datasheet_channel_nr": 24,
+        "datasheet_channel_name": "F1"
+      },
+      {
+        "datasheet_channel_nr": 25,
+        "datasheet_channel_name": "F2"
+      },
+      {
+        "datasheet_channel_nr": 26,
+        "datasheet_channel_name": "F3"
+      },
+      {
+        "datasheet_channel_nr": 27,
+        "datasheet_channel_name": "F4"
+      },
+      {
+        "datasheet_channel_nr": 28,
+        "datasheet_channel_name": "F5"
+      },
+      {
+        "datasheet_channel_nr": 29,
+        "datasheet_channel_name": "F6"
+      },
+      {
+        "datasheet_channel_nr": 30,
+        "datasheet_channel_name": "F7"
+      },
+      {
+        "datasheet_channel_nr": 31,
+        "datasheet_channel_name": "F8"
+      },
+      {
+        "datasheet_channel_nr": 32,
+        "datasheet_channel_name": "MEDI"
+      },
+      {
+        "datasheet_channel_nr": 33,
+        "datasheet_channel_name": "CLEAR"
+      },
+      {
+        "datasheet_channel_nr": 34,
+        "datasheet_channel_name": "position"
+      }
+    ]
+  },
+  {
+    "schema_version": "3.0.2",
+    "datasheet_id": "acttrust2",
+    "datasheet_manufacturer": "Condor Instruments",
+    "datasheet_type": "wearable actigraph",
+    "datasheet_sensor_modality": [
+      "light",
+      "accelerometer",
+      "temperature",
+      "other"
+    ],
+    "datasheet_sensor_modality_other": "Capacitive off-wrist detection",
+    "datasheet_model": "ActTrust2",
+    "datasheet_calibration_range": "Not documented in the source metadata.",
+    "datasheet_calibration_notes": "The source metadata states that the devices were not calibrated and provides no calibration records. Because GLC 3.0.2 requires a calibration date, the earliest documented deployment date is used as a transparent provisional proxy; it must not be interpreted as evidence of calibration.",
+    "datasheet_channel": [
+      {
+        "datasheet_channel_nr": 1,
+        "datasheet_channel_name": "MS"
+      },
+      {
+        "datasheet_channel_nr": 2,
+        "datasheet_channel_name": "EVENT"
+      },
+      {
+        "datasheet_channel_nr": 3,
+        "datasheet_channel_name": "TEMPERATURE"
+      },
+      {
+        "datasheet_channel_nr": 4,
+        "datasheet_channel_name": "EXT.TEMPERATURE"
+      },
+      {
+        "datasheet_channel_nr": 5,
+        "datasheet_channel_name": "ORIENTATION"
+      },
+      {
+        "datasheet_channel_nr": 6,
+        "datasheet_channel_name": "PIM"
+      },
+      {
+        "datasheet_channel_nr": 7,
+        "datasheet_channel_name": "PIMn"
+      },
+      {
+        "datasheet_channel_nr": 8,
+        "datasheet_channel_name": "TAT"
+      },
+      {
+        "datasheet_channel_nr": 9,
+        "datasheet_channel_name": "TATn"
+      },
+      {
+        "datasheet_channel_nr": 10,
+        "datasheet_channel_name": "ZCM"
+      },
+      {
+        "datasheet_channel_nr": 11,
+        "datasheet_channel_name": "ZCMn"
+      },
+      {
+        "datasheet_channel_nr": 12,
+        "datasheet_channel_name": "LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 13,
+        "datasheet_channel_name": "AMB.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 14,
+        "datasheet_channel_name": "RED.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 15,
+        "datasheet_channel_name": "GREEN.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 16,
+        "datasheet_channel_name": "BLUE.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 17,
+        "datasheet_channel_name": "IR.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 18,
+        "datasheet_channel_name": "UVA.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 19,
+        "datasheet_channel_name": "UVB.LIGHT"
+      },
+      {
+        "datasheet_channel_nr": 20,
+        "datasheet_channel_name": "STATE"
+      },
+      {
+        "datasheet_channel_nr": 21,
+        "datasheet_channel_name": "CAP_SENS_1"
+      },
+      {
+        "datasheet_channel_nr": 22,
+        "datasheet_channel_name": "CAP_SENS_2"
+      },
+      {
+        "datasheet_channel_nr": 23,
+        "datasheet_channel_name": "F1"
+      },
+      {
+        "datasheet_channel_nr": 24,
+        "datasheet_channel_name": "F2"
+      },
+      {
+        "datasheet_channel_nr": 25,
+        "datasheet_channel_name": "F3"
+      },
+      {
+        "datasheet_channel_nr": 26,
+        "datasheet_channel_name": "F4"
+      },
+      {
+        "datasheet_channel_nr": 27,
+        "datasheet_channel_name": "F5"
+      },
+      {
+        "datasheet_channel_nr": 28,
+        "datasheet_channel_name": "F6"
+      },
+      {
+        "datasheet_channel_nr": 29,
+        "datasheet_channel_name": "F7"
+      },
+      {
+        "datasheet_channel_nr": 30,
+        "datasheet_channel_name": "F8"
+      },
+      {
+        "datasheet_channel_nr": 31,
+        "datasheet_channel_name": "MEDI"
+      },
+      {
+        "datasheet_channel_nr": 32,
+        "datasheet_channel_name": "CLEAR"
+      }
+    ]
+  }
+]

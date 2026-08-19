@@ -1,0 +1,110 @@
+Component,Level,Name,Required,Type,Description,Example >>
+Study (study.json),0,,,,Study-level metadata
+,1,study_title,Yes,,,Awesome light exposure study,,,Near-corneal plane light exposure in daily life
+,1,study_internal_id,Yes,string,Unique identifier for study,(automatic)
+,1,study_preregistration,No,string,DOI (Digital Object Identifier) of pre-registration document describing data collection,doi….
+,1,study_ethics,No,string,Name of ethics committee and approval number,"Ethics Committee Technical University of Munich, 234jv5643 ",,,"Ethics Committee Technical University of Munich, 2023-115-S-KK"
+,1,study_registration,No,string,Registry and ID of clinical trial registration,CT250350,,,N/A
+,1,study_short_description,Yes,string,Short narrative description of the study,"In this study, we compared healthy young subjects to elderly healthy subjects and elderly subjects with a severe form of cognitive impairment to study differences in light exposure between the groups",,,"In this study, we measured light exposure in healthy participants at the near-corneal plane, and captured a variaty of contextual, environmental and behavioural contributors to light exposure patterns using smartphone-based experience sampling."
+,1,study_sample,Yes,string,Short description of the study sample,"The study sample is comprised of a healthy young population and a healthy elderly population, each recruited through message boards, as well as a clinical subgroup of elderly participants with severe dementia, recruited through a collaboration with xyz wards.",,,"Participants are healthy adults between 18 and 55 years old (n=26; mean age 28±5 years, 14F) "
+,1,study_groups,,array | #/definitions/group,Groups in the study
+,2,study_group,,object,Group descriptor object,1,2,3,Description of what study group is?
+,3,study_group_name,Yes,string,Group name,C1,C2,P
+,3,study_group_description,No,string,Group description,healthy young,healthy elderly,impaired elderly,Healthy 
+,3,study_group_size,No,integer,Sample size,10,11,10,26
+,3,study_group_inclusion,No,array of strings (min. 0),"Inclusion criteria for sample group, given as an array of strings","healthy, between 18-30 y/o","healthy, between 65-75 y/o","severe cognitive impairment, between 65 - 75 y/o","≥18, ≤55 years old, good physical health"
+,3,study_group_exclusion,No,array of strings (min. 0),"Exclusion criteria for sample group, given as an array of strings","shift work in the last 3 month, substance abuse, smoker","not retired, substance abuse, smoker, AMD","not retired, substance abuse, smoker, AMD","systemic medication use, substance use, psychiatric sleep disorders presence, requirement of prescription glasses during the experiment, absent from Tübingen on first and last experimental days"
+,1,study_intervention,No,string,"Short description of the study intervention, if any",none,,,N/A
+,1,study_setting,Yes,string,Description of the study setting,real-world setting,,,real-world setting
+,1,study_geographical location,Yes,string,"Geographical location and context (city, rural, urban)","urban, central Germany",,,"urban, South-West Germany (48.5216° N, 9.0576° E)"
+,1,study_contributors,No,array | contributor.json,Any contributors to the study,(see below)
+,1,study_datasets,Yes,array,Datasets contained within the study,(automatic)
+,1,study_type,,,,observational,,,observational
+,1,study_funding_sources,No,array of strings (min. 1),"Any funding sources supporting the project. If the funding number is available, it should be given""","The study was part of the the MeLiDos project. The MeLiDos project (22NRM05 MeLiDos) has received funding from the European Partnership on Metrology, co-financed by the European Union’s Horizon Europe Research and Innovation Programme and by the Participating States."
+,1,study_keywords,No,array,Key words describing the projects,"observational, LiDo, melanopic, …",,,"longitudinal light logging, ambulatory study"
+
+
+
+Component,Level,Name,Required,Type,Description
+Contributor (contributor.json),0,,,object,Descriptor for contributor to the study
+,1,contributor_full_name,Yes,string,,Johannes Zauner,Person B,…,Carolina Guidolin,Manuel Spitschan
+,1,contributor_roles,No,array of strings,,"Conceptualization, Data Curation, Investigation",,,"Conceptualisation, Data collection","Conceptualisation, supervision "
+,1,contributor_email,No,idn-email,Email address,johannes.zauner@tum.de,email@b.de,…,carolina.guidolin@tuebingen.mpg.de,manuel.spitschan@tum.de
+,1,contributor_orcid,Yes,string,ORCID identifier,https://orcid.org/0000-0003-2171-4566,,,https://orcid.org/0009-0007-4959-2667,https://orcid.org/0000-0002-8572-9268
+,1,contributor_institution,No,object,Institution,,,,Difference with row below?
+,2,contributor_institution_name,Yes,string,Name of institution,Technical University of Munich,…,,"Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich","Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich"
+,2,contributor_institution_city,No,string,City of institution,Munich,…,,"Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich","Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich"
+,2,contributor_institution_country,Yes,string,Country of institution,Germany,…,,"Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich","Max Planck Institute for Biological Cybernetics & 
+Technical University of Munich"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

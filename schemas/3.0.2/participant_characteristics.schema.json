@@ -1,0 +1,49 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "$id": "https://raw.githubusercontent.com/tscnlab/glc-metadata-validator/main/schemas/3.0.2/participant_characteristics.schema.json",
+  "version": "3.0.2",
+  "fields": [
+    {
+      "name": "participant_internal_id",
+      "type": "string",
+      "description": "Linked participant ID",
+      "example": "EXAMPLE_P001"
+    },
+    {
+      "name": "participant_characteristic_name",
+      "type": "string",
+      "description": "Name of the participant characteristic",
+      "example": "chronotype"
+    },
+    {
+      "name": "participant_characteristic_value",
+      "type": "string",
+      "description": "Value of the participant characteristic",
+      "example": "intermediate"
+    },
+    {
+      "name": "participant_characteristic_unit",
+      "type": "string",
+      "description": "Optional unit of the characteristic value. Leave blank for unitless scores or categorical values."
+    },
+    {
+      "name": "participant_characteristic_description",
+      "type": "string",
+      "description": "Additional notes or description",
+      "example": "Self-reported chronotype category."
+    }
+  ],
+  "primaryKey": [
+    "participant_internal_id",
+    "participant_characteristic_name"
+  ],
+  "foreignKeys": [
+    {
+      "fields": "participant_internal_id",
+      "reference": {
+        "resource": "participants",
+        "fields": "participant_internal_id"
+      }
+    }
+  ]
+}

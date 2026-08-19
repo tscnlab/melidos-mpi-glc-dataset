@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/tscnlab/glc-metadata-validator/main/schemas/3.0.2/device.schema.json",
+  "version": "3.0.2",
+  "title": "Device Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the metadata schema used by this device record",
+      "examples": [
+        "3.0.2"
+      ]
+    },
+    "device_internal_id": {
+      "type": "string",
+      "description": "Unique internal identifier for the device",
+      "examples": [
+        "EXAMPLE_DEVICE_001"
+      ]
+    },
+    "device_manufacturer": {
+      "type": "string",
+      "description": "Manufacturer of the device",
+      "examples": [
+        "Example Instruments"
+      ]
+    },
+    "device_model": {
+      "type": "string",
+      "description": "Model name or number of the device",
+      "examples": [
+        "Light Sensor LS-100"
+      ]
+    },
+    "device_serial_number": {
+      "type": "string",
+      "description": "Serial number assigned to the individual device",
+      "examples": [
+        "LS100-0001"
+      ]
+    },
+    "device_calibration_date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Required date of the device's most recent applicable calibration (format YYYY-MM-DD).",
+      "examples": [
+        "2026-01-15"
+      ]
+    },
+    "device_firmware_version": {
+      "type": "string",
+      "description": "Firmware version installed on the device",
+      "examples": [
+        "1.2.0"
+      ]
+    },
+    "device_datasheet_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*(-v[0-9]+(\\.[0-9]+)*)?$",
+      "description": "Reference to the general device specifications. Datasheet ID (slug). Version suffix optional; e.g., lumitech-lt100-v1.0",
+      "examples": [
+        "example-instruments-ls100-v1"
+      ]
+    },
+    "device_sensors": {
+      "type": "array",
+      "description": "List of sensors contained within the device",
+      "default": [
+
+      ],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "device_sensor_type": {
+            "type": "string",
+            "description": "Type of sensor (e.g., photopic light sensor, UV sensor)",
+            "examples": [
+              "photopic light sensor"
+            ]
+          },
+      "device_sensor_datasheet_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9._-]*(-v[0-9]+(\\.[0-9]+)*)?$",
+        "description": "Optional reference to a separate detailed datasheet for this sensor component. Omit when the required whole-device datasheet covers the integrated sensor.",
+        "examples": [
+          "example-instruments-ls100-v1"
+        ]
+          }
+        },
+        "required": [
+          "device_sensor_type"
+        ]
+      },
+      "examples": [
+        [
+          {
+            "device_sensor_type": "photopic light sensor"
+          }
+        ]
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "device_internal_id",
+    "device_manufacturer",
+    "device_model",
+    "device_serial_number",
+    "device_calibration_date",
+    "device_datasheet_id"
+  ],
+  "examples": [
+    {
+      "device_internal_id": "D001",
+      "device_manufacturer": "ExampleCorp",
+      "device_model": "XC1000",
+      "device_serial_number": "SN123456",
+      "device_calibration_date": "2025-05-01",
+      "device_firmware_version": "v1.2.3",
+      "device_datasheet_id": "lumitech-lt100-v1.0",
+      "device_sensors": [
+        {
+          "device_sensor_type": "photopic",
+          "device_sensor_datasheet_id": "lumitech-lt100-sensorA-v1.0"
+        }
+      ]
+    }
+  ],
+  "$comment": "Missing-value convention: Optional properties with no value must be omitted rather than represented as null, an empty string, or an empty array."
+}

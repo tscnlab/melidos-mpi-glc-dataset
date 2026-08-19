@@ -1,0 +1,4 @@
+"Id","Datetime","is_past","exp_time","type","location","loc_spec","descr","feedback","identity","identity_spec","social_type","removal","future_use","loc_spec_english","descr_english","identity_spec_english","future_use_english"
+"MPI_S208","2023-09-04 13:00:00","past",2,1,2,,"Colleague remarked that glasses suit me (i don't usually wear glasses)",TRUE,2,,3,FALSE,,,"Colleague remarked that the glasses suit me (I don't usually wear glasses).",,
+"MPI_S208","2023-09-04 14:30:00","past",2,2,2,,"Colleague asked if he's being recorded",TRUE,2,,2,FALSE,,,"Colleague asked if he's being recorded.",,
+"MPI_S208","2023-09-04 14:30:00","past",2,2,2,,"Colleague asked what the glasses are for",TRUE,2,,2,FALSE,,,"Colleague asked what the glasses are for.",,

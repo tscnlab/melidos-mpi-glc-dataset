@@ -1,0 +1,443 @@
+participant_internal_id,participant_characteristic_name,participant_characteristic_value,participant_characteristic_unit,participant_characteristic_description
+MPI_S201,VLSQ8,17,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S201,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S201,meq,47,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S201,msf_sc,14550,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S201,sjl,1,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S201,so_w,83100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S201,so_f,300,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S201,sd_w,7.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S201,sd_f,7.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S201,msw,10950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S201,msf,14550,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S201,sd_week,7.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S201,outdoor,128.571428571429,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S201,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S201,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S201,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S201,ASE,28,,Source: ase.RData; original column: ASE.
+MPI_S202,VLSQ8,17,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S202,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S202,meq,49,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S202,msf_sc,14948.5714290142,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S202,sjl,0.658333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S202,so_w,85200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S202,so_f,1140,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S202,sd_w,7.66666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S202,sd_f,7.68333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S202,msw,12600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S202,msf,14970,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S202,sd_week,7.67142857142857,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S202,outdoor,65.7142857142857,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S202,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S202,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S202,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S202,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S204,VLSQ8,14,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S204,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S204,meq,33,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S204,msf_sc,20121.4285709858,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S204,sjl,1.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S204,so_w,5400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S204,so_f,8100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S204,sd_w,6.25,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S204,sd_f,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S204,msw,16650,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S204,msf,22050,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S204,sd_week,6.67857142857143,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S204,outdoor,171.428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S204,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S204,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S204,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S204,ASE,26,,Source: ase.RData; original column: ASE.
+MPI_S205,VLSQ8,17,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S205,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S205,meq,41,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S205,msf_sc,13435.7142859697,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S205,sjl,0.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S205,so_w,83700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S205,so_f,83700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S205,sd_w,8.25,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S205,sd_f,9.25,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S205,msw,12150,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S205,msf,13950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S205,sd_week,8.96428571428572,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S205,outdoor,214.285714285714,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S205,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S205,employment_status,2,,Source: demographics.RData; original column: employment_status.
+MPI_S205,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S205,ASE,32,,Source: ase.RData; original column: ASE.
+MPI_S206,VLSQ8,25,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S206,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S206,meq,42,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S206,msf_sc,20700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S206,sjl,0.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S206,so_w,3600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S206,so_f,5400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S206,sd_w,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S206,sd_f,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S206,msw,18900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S206,msf,20700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S206,sd_week,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S206,outdoor,77.1428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S206,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S206,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S206,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S206,ASE,24,,Source: ase.RData; original column: ASE.
+MPI_S208,VLSQ8,28,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S208,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S208,meq,38,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S208,msf_sc,17378.5714290142,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S208,sjl,1.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S208,so_w,2100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S208,so_f,3900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S208,sd_w,6.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S208,sd_f,8.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S208,msw,14550,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S208,msf,19950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S208,sd_week,7.48809523809524,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S208,outdoor,94.2857142857143,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S208,native_language,TRUE,,Source: demographics.RData; original column: native_language.
+MPI_S208,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S208,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S208,ASE,29,,Source: ase.RData; original column: ASE.
+MPI_S209,VLSQ8,21,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S209,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S209,meq,46,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S209,msf_sc,16650,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S209,sjl,2,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S209,so_w,83700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S209,so_f,4500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S209,sd_w,6.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S209,sd_f,6.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S209,msw,9450,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S209,msf,16650,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S209,sd_week,6.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S209,outdoor,308.571428571429,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S209,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S209,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S209,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S209,ASE,28,,Source: ase.RData; original column: ASE.
+MPI_S210,VLSQ8,17,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S210,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S210,meq,66,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S210,msf_sc,9942.85714304447,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S210,sjl,-0.333333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S210,so_w,85200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S210,so_f,82800,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S210,sd_w,7.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S210,sd_f,8,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S210,msw,12000,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S210,msf,10800,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S210,sd_week,7.52380952380952,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S210,outdoor,85.7142857142857,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S210,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S210,employment_status,2,,Source: demographics.RData; original column: employment_status.
+MPI_S210,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S210,ASE,28,,Source: ase.RData; original column: ASE.
+MPI_S212,VLSQ8,16,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S212,meq_type,1,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S212,meq,70,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S212,msf_sc,9450,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S212,sjl,0,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S212,so_w,81900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S212,so_f,81900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S212,sd_w,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S212,sd_f,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S212,msw,9450,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S212,msf,9450,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S212,sd_week,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S212,outdoor,222.857142857143,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S212,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S212,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S212,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S212,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S213,VLSQ8,15,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S213,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S213,meq,62,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S213,msf_sc,15248.5714290142,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S213,sjl,0.491666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S213,so_w,84600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S213,so_f,86340,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S213,sd_w,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S213,sd_f,8.51666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S213,msw,13500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S213,msf,15270,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S213,sd_week,8.5047619047619,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S213,outdoor,124.285714285714,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S213,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S213,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S213,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S213,ASE,23,,Source: ase.RData; original column: ASE.
+MPI_S214,VLSQ8,25,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S214,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S214,meq,69,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S214,msf_sc,18750,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S214,sjl,1.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S214,so_w,86100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S214,so_f,5100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S214,sd_w,7.58333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S214,sd_f,7.58333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S214,msw,13350,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S214,msf,18750,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S214,sd_week,7.58333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S214,outdoor,325.714285714286,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S214,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S214,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S214,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S214,ASE,25,,Source: ase.RData; original column: ASE.
+MPI_S215,VLSQ8,31,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S215,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S215,meq,54,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S215,msf_sc,18900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S215,sjl,0.758333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S215,so_w,1740,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S215,so_f,5400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S215,sd_w,8.01666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S215,sd_f,7.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S215,msw,16170,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S215,msf,18900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S215,sd_week,7.86904761904762,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S215,outdoor,94.2857142857143,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S215,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S215,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S215,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S215,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S216,VLSQ8,16,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S216,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S216,meq,33,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S216,msf_sc,23400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S216,sjl,0,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S216,so_w,7200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S216,so_f,7200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S216,sd_w,9,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S216,sd_f,9,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S216,msw,23400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S216,msf,23400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S216,sd_week,9,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S216,outdoor,98.5714285714286,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S216,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S216,employment_status,2,,Source: demographics.RData; original column: employment_status.
+MPI_S216,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S216,ASE,26,,Source: ase.RData; original column: ASE.
+MPI_S218,VLSQ8,13,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S218,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S218,meq,36,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S218,msf_sc,21000,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S218,sjl,1.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S218,so_w,600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S218,so_f,6000,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S218,sd_w,8.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S218,sd_f,8.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S218,msw,15600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S218,msf,21000,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S218,sd_week,8.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S218,outdoor,162.857142857143,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S218,native_language,TRUE,,Source: demographics.RData; original column: native_language.
+MPI_S218,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S218,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S218,ASE,25,,Source: ase.RData; original column: ASE.
+MPI_S219,VLSQ8,21,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S219,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S219,meq,59,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S219,msf_sc,16778.5714290142,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S219,sjl,0.875,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S219,so_w,85500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S219,so_f,1800,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S219,sd_w,8.25,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S219,sd_f,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S219,msw,13950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S219,msf,17100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S219,sd_week,8.32142857142857,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S219,outdoor,77.1428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S219,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S219,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S219,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S219,ASE,38,,Source: ase.RData; original column: ASE.
+MPI_S221,VLSQ8,22,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S221,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S221,meq,49,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S221,msf_sc,20828.5714290142,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S221,sjl,1.875,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S221,so_w,900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S221,so_f,7200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S221,sd_w,7.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S221,sd_f,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S221,msw,14400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S221,msf,21150,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S221,sd_week,7.57142857142857,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S221,outdoor,94.2857142857143,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S221,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S221,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S221,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S221,ASE,31,,Source: ase.RData; original column: ASE.
+MPI_S222,VLSQ8,30,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S222,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S222,meq,63,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S222,msf_sc,10950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S222,sjl,0,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S222,so_w,300,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S222,so_f,300,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S222,sd_w,5.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S222,sd_f,5.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S222,msw,10950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S222,msf,10950,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S222,sd_week,5.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S222,outdoor,171.428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S222,native_language,TRUE,,Source: demographics.RData; original column: native_language.
+MPI_S222,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S222,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S222,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S223,VLSQ8,22,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S223,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S223,meq,41,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S223,msf_sc,19414.2857140303,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S223,sjl,1,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S223,so_w,3600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S223,so_f,5400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S223,sd_w,7.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S223,sd_f,8.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S223,msw,17100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S223,msf,20700,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S223,sd_week,7.78571428571429,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S223,outdoor,154.285714285714,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S223,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S223,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S223,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S223,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S224,VLSQ8,15,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S224,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S224,meq,59,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S224,msf_sc,16135.7142859697,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S224,sjl,0.416666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S224,so_w,900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S224,so_f,2100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S224,sd_w,7.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S224,sd_f,7.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S224,msw,14850,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S224,msf,16350,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S224,sd_week,7.79761904761905,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S224,outdoor,180,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S224,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S224,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S224,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S224,ASE,31,,Source: ase.RData; original column: ASE.
+MPI_S225,VLSQ8,27,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S225,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S225,meq,59,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S225,msf_sc,9557.14285695553,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S225,sjl,0.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S225,so_w,83400,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S225,so_f,85200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S225,sd_w,5.83333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S225,sd_f,6.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S225,msw,7500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S225,msf,10200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S225,sd_week,5.97619047619048,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S225,outdoor,197.142857142857,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S225,native_language,TRUE,,Source: demographics.RData; original column: native_language.
+MPI_S225,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S225,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S225,ASE,34,,Source: ase.RData; original column: ASE.
+MPI_S226,VLSQ8,19,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S226,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S226,meq,55,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S226,msf_sc,17635.7142859697,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S226,sjl,0.916666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S226,so_w,2100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S226,so_f,5100,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S226,sd_w,6.91666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S226,sd_f,7.08333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S226,msw,14550,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S226,msf,17850,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S226,sd_week,6.96428571428571,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S226,outdoor,77.1428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S226,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S226,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S226,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S226,ASE,21,,Source: ase.RData; original column: ASE.
+MPI_S227,VLSQ8,26,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S227,meq_type,4,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S227,meq,34,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S227,msf_sc,22157.1428569555,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S227,sjl,1.75,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S227,so_w,4200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S227,so_f,9600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S227,sd_w,6.83333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S227,sd_f,7.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S227,msw,16500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S227,msf,22800,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S227,sd_week,6.97619047619048,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S227,outdoor,188.571428571429,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S227,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S227,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S227,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S227,ASE,27,,Source: ase.RData; original column: ASE.
+MPI_S228,VLSQ8,27,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S228,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S228,meq,55,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S228,msf_sc,16140,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S228,sjl,0.983333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S228,so_w,84600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S228,so_f,3480,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S228,sd_w,8,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S228,sd_f,7.03333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S228,msw,12600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S228,msf,16140,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S228,sd_week,7.72380952380952,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S228,outdoor,77.1428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S228,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S228,employment_status,1,,Source: demographics.RData; original column: employment_status.
+MPI_S228,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S228,ASE,34,,Source: ase.RData; original column: ASE.
+MPI_S229,VLSQ8,13,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S229,meq_type,2,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S229,meq,60,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S229,msf_sc,14442.8571430445,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S229,sjl,1.79166666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S229,so_w,81900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S229,so_f,600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S229,sd_w,7.58333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S229,sd_f,8.33333333333333,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S229,msw,9150,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S229,msf,15600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S229,sd_week,7.69047619047619,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S229,outdoor,60,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S229,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S229,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S229,glasses_use,TRUE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S229,ASE,38,,Source: ase.RData; original column: ASE.
+MPI_S230,VLSQ8,14,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S230,meq_type,5,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S230,meq,28,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S230,msf_sc,16071.4285709858,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S230,sjl,1.25,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S230,so_w,1800,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S230,so_f,3600,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S230,sd_w,6.5,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S230,sd_f,8,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S230,msw,13500,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S230,msf,18000,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S230,sd_week,6.92857142857143,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S230,outdoor,111.428571428571,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S230,native_language,TRUE,,Source: demographics.RData; original column: native_language.
+MPI_S230,employment_status,5,,Source: demographics.RData; original column: employment_status.
+MPI_S230,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S230,ASE,31,,Source: ase.RData; original column: ASE.
+MPI_S231,VLSQ8,14,,Source: vlsq8.RData; original column: VLSQ8.
+MPI_S231,meq_type,3,,Derived phenotype measure calculated during source-data preprocessing. Derived MEQ chronotype category. Source: chronotype.RData; original column: meq_type.
+MPI_S231,meq,47,score,Derived phenotype measure calculated during source-data preprocessing. Calculated Morningness-Eveningness Questionnaire score. Source: chronotype.RData; original column: meq.
+MPI_S231,msf_sc,14935.7142859697,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep-corrected midpoint of sleep on free days. Source: chronotype.RData; original column: msf_sc.
+MPI_S231,sjl,0.375,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated social jetlag. Source: chronotype.RData; original column: sjl.
+MPI_S231,so_w,1200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on working days. Source: chronotype.RData; original column: so_w.
+MPI_S231,so_f,1200,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep onset on free days. Source: chronotype.RData; original column: so_f.
+MPI_S231,sd_w,7.41666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on working days. Source: chronotype.RData; original column: sd_w.
+MPI_S231,sd_f,8.16666666666667,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated sleep duration on free days. Source: chronotype.RData; original column: sd_f.
+MPI_S231,msw,14550,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on working days. Source: chronotype.RData; original column: msw.
+MPI_S231,msf,15900,seconds after midnight,Derived phenotype measure calculated during source-data preprocessing. Calculated midpoint of sleep on free days. Source: chronotype.RData; original column: msf.
+MPI_S231,sd_week,7.63095238095238,hours,Derived phenotype measure calculated during source-data preprocessing. Calculated average weekly sleep duration. Source: chronotype.RData; original column: sd_week.
+MPI_S231,outdoor,68.5714285714286,minutes,Derived phenotype measure calculated during source-data preprocessing. Calculated average time spent outside. Source: chronotype.RData; original column: outdoor.
+MPI_S231,native_language,FALSE,,Source: demographics.RData; original column: native_language.
+MPI_S231,employment_status,4,,Source: demographics.RData; original column: employment_status.
+MPI_S231,glasses_use,FALSE,,Source: evaluation.RData; original column: glasses_use.
+MPI_S231,ASE,38,,Source: ase.RData; original column: ASE.

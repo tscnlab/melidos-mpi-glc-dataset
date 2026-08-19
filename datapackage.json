@@ -1,0 +1,52 @@
+{
+  "profile": "schemas/3.0.2/glc-dp-profile.json",
+  "schema_version": "3.0.2",
+  "name": "melidos-mpi-glc-package",
+  "title": "MeLiDos MPI GLC Data Package",
+  "resources": [
+    {
+      "name": "study",
+      "path": "data/study.json",
+      "profile": "json-entity-resource.json",
+      "mediatype": "application/json",
+      "jsonSchema": "schemas/3.0.2/study.schema.json"
+    },
+    {
+      "name": "participants",
+      "path": "data/participants.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": "schemas/3.0.2/participants.schema.json"
+    },
+    {
+      "name": "participant_characteristics",
+      "path": "data/participant_characteristics.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": "schemas/3.0.2/participant_characteristics.schema.json"
+    },
+    {
+      "name": "datasets",
+      "path": "data/datasets.json",
+      "profile": "json-entity-resource.json",
+      "mediatype": "application/json",
+      "jsonSchema": "schemas/3.0.2/dataset.schema.json"
+    },
+    {
+      "name": "devices",
+      "path": "data/devices.json",
+      "profile": "json-entity-resource.json",
+      "mediatype": "application/json",
+      "jsonSchema": "schemas/3.0.2/device.schema.json"
+    },
+    {
+      "name": "device_datasheets",
+      "path": "data/device_datasheets.json",
+      "profile": "json-entity-resource.json",
+      "mediatype": "application/json",
+      "jsonSchema": "schemas/3.0.2/device_datasheet.schema.json"
+    }
+  ]
+}

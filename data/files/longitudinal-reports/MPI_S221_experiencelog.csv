@@ -1,0 +1,2 @@
+"Id","Datetime","is_past","exp_time","type","location","loc_spec","descr","feedback","identity","identity_spec","social_type","removal","future_use","loc_spec_english","descr_english","identity_spec_english","future_use_english"
+"MPI_S221","2023-10-27 18:55:00","past",2,3,3,,"the salesman asked suspiciously and annoyingly that of I am filming the store :)",TRUE,4,,2,FALSE,"probably using less in stores",,"The salesman asked suspiciously and annoyingly if I was filming the store.",,"I will probably use the light glasses less in stores."

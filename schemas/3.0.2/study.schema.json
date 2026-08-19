@@ -1,0 +1,240 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/tscnlab/glc-metadata-validator/main/schemas/3.0.2/study.schema.json",
+  "version": "3.0.2",
+  "title": "Study Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the metadata schema used by this study",
+      "examples": [
+        "3.0.2"
+      ]
+    },
+    "study_internal_id": {
+      "type": "string",
+      "description": "Unique identifier for study",
+      "examples": [
+        "EXAMPLE_STUDY_001"
+      ]
+    },
+    "study_title": {
+      "type": "string",
+      "description": "Study name",
+      "examples": [
+        "Example everyday light exposure study"
+      ]
+    },
+    "study_preregistration": {
+      "type": "string",
+      "description": "DOI, URL, or concise status note for study or analysis preregistration. Clearly distinguish analysis preregistration from preregistration of the study or data collection.",
+      "examples": [
+        "https://osf.io/example/"
+      ]
+    },
+    "study_ethics": {
+      "type": "string",
+      "description": "Name of ethics committee and approval number",
+      "examples": [
+        "Example University Ethics Committee, approval EX-2026-001"
+      ]
+    },
+    "study_registration": {
+      "type": "string",
+      "description": "Registry and ID of clinical trial registration",
+      "examples": [
+        "Not registered"
+      ]
+    },
+    "study_short_description": {
+      "type": "string",
+      "description": "Short narrative description of the study",
+      "examples": [
+        "Observational study of everyday light exposure and sleep."
+      ]
+    },
+    "study_sample": {
+      "type": "string",
+      "description": "Short description of the study sample",
+      "examples": [
+        "Three healthy adult volunteers."
+      ]
+    },
+    "study_groups": {
+      "type": "array",
+      "description": "Groups in the study",
+      "items": {
+        "type": "object",
+        "properties": {
+          "study_group_name": {
+            "type": "string",
+            "description": "Group name",
+            "examples": [
+              "Example cohort"
+            ]
+          },
+          "study_group_description": {
+            "type": "string",
+            "description": "Group description",
+            "examples": [
+              "Adult community sample"
+            ]
+          },
+          "study_group_size": {
+            "type": "integer",
+            "description": "Sample size",
+            "examples": [
+              3
+            ]
+          },
+          "study_group_inclusion": {
+            "type": "array",
+            "description": "Inclusion criteria for sample group, given as an array of strings",
+            "items": {
+              "type": "string"
+            },
+            "examples": [
+              [
+                "Age 18 years or older"
+              ]
+            ]
+          },
+          "study_group_exclusion": {
+            "type": "array",
+            "description": "Exclusion criteria for sample group, given as an array of strings",
+            "items": {
+              "type": "string"
+            },
+            "examples": [
+              [
+                "Unable to provide informed consent"
+              ]
+            ]
+          },
+          "study_group_datasets": {
+            "type": "array",
+            "description": "Dataset internal IDs linked to this study group",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "examples": [
+              [
+                "EXAMPLE_DATASET_P001",
+                "EXAMPLE_DATASET_P002"
+              ]
+            ]
+          }
+        },
+        "required": [
+          "study_group_name",
+          "study_group_datasets"
+        ]
+      },
+      "examples": [
+        [
+          {
+            "study_group_name": "Example cohort",
+            "study_group_description": "Adult community sample",
+            "study_group_size": 3,
+            "study_group_datasets": [
+              "EXAMPLE_DATASET_P001"
+            ]
+          }
+        ]
+      ]
+    },
+    "study_intervention": {
+      "type": "string",
+      "description": "Short description of the study intervention, if any",
+      "examples": [
+        "No intervention; observational study."
+      ]
+    },
+    "study_setting": {
+      "type": "string",
+      "description": "Description of the study setting",
+      "examples": [
+        "Participants’ everyday indoor and outdoor environments."
+      ]
+    },
+    "study_geographical_location": {
+      "type": "string",
+      "description": "Geographical location and context (city/rural, urban)",
+      "examples": [
+        "Munich, Germany"
+      ]
+    },
+    "study_contributors": {
+      "type": "array",
+      "description": "Any contributors to the study",
+      "items": {
+        "$ref": "contributor.schema.json"
+      },
+      "examples": [
+        [
+          "Alex Example"
+        ]
+      ]
+    },
+    "study_datasets": {
+      "type": "array",
+      "description": "Datasets contained within the study",
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        [
+          "EXAMPLE_DATASET_P001",
+          "EXAMPLE_DATASET_P002"
+        ]
+      ]
+    },
+    "study_type": {
+      "type": "string",
+      "description": "Type of study",
+      "examples": [
+        "observational"
+      ]
+    },
+    "study_funding_sources": {
+      "type": "array",
+      "description": "Any funding sources supporting the project. If the funding number is available, it should be given",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "examples": [
+        [
+          "Example Research Council grant EX-2026-001"
+        ]
+      ]
+    },
+    "study_keywords": {
+      "type": "array",
+      "description": "Key words describing the projects",
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        [
+          "light exposure",
+          "sleep",
+          "circadian rhythms"
+        ]
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "study_internal_id",
+    "study_title",
+    "study_short_description",
+    "study_sample",
+    "study_setting",
+    "study_geographical_location",
+    "study_datasets"
+  ],
+  "$comment": "Missing-value convention: Optional properties with no value must be omitted rather than represented as null, an empty string, or an empty array."
+}

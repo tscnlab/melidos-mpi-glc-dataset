@@ -1,0 +1,8 @@
+"Id","Date","instructions","intensity","location","type","commute","sedentary","light_glasses","startdate_3","enddate_3","type_english"
+"MPI_S201","2023-08-14",1,3,1,"walking to/from bus stop approx. 15 mine",,500,,"2023-08-14 22:31:00","2023-08-14 22:33:00","walking to/from bus stop approximately 15 minutes"
+"MPI_S201","2023-08-15",1,3,1,"walking ~ 1 hour total",,500,,"2023-08-15 23:15:00","2023-08-15 23:15:00","walking (approximately 1 hour)"
+"MPI_S201","2023-08-16",1,2,2,"Carrying heavy objects ~30 minutes total",,600,,"2023-08-16 21:52:00","2023-08-16 21:53:00","Carrying heavy objects, approximately 30 minutes total"
+"MPI_S201","2023-08-17",1,1,1,"running",,500,,"2023-08-18 00:42:00","2023-08-18 00:42:00","running"
+"MPI_S201","2023-08-18",1,1,2,"bouldering",,450,,"2023-08-19 00:24:00","2023-08-19 00:24:00","bouldering"
+"MPI_S201","2023-08-19",1,1,1,"swimming",,420,,"2023-08-20 01:09:00","2023-08-20 01:10:00","swimming"
+"MPI_S201","2023-08-20",1,1,1,"running",,600,,"2023-08-20 23:30:00","2023-08-20 23:31:00","running"

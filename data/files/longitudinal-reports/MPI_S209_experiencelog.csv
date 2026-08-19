@@ -1,0 +1,2 @@
+"Id","Datetime","is_past","exp_time","type","location","loc_spec","descr","feedback","identity","identity_spec","social_type","removal","future_use","loc_spec_english","descr_english","identity_spec_english","future_use_english"
+"MPI_S209","2023-09-07 17:44:00","past",2,3,3,,"some people think that it's a camera capturing their video.",FALSE,,,,FALSE,"nothing",,"Some people think that it's a camera capturing their video.",,"Nothing"

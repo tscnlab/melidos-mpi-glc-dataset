@@ -1,0 +1,2 @@
+"Id","Datetime","is_past","exp_time","type","location","loc_spec","descr","feedback","identity","identity_spec","social_type","removal","future_use","loc_spec_english","descr_english","identity_spec_english","future_use_english"
+"MPI_S218","2023-10-17 13:00:00","past",2,1,2,,"Mensa - people inquisitive about the device",TRUE,2,,2,FALSE,"No change",,"Mensa - people inquisitive about the device",,"No change"

@@ -1,0 +1,19 @@
+name: Validate GLC Dataset
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  packages: read
+  id-token: write
+  attestations: write
+
+jobs:
+  validate:
+    uses: tscnlab/glc-metadata-validator/.github/workflows/validate.yml@v0.5.2
+    with:
+      datapackage: datapackage.json

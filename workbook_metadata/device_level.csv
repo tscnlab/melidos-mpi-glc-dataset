@@ -1,0 +1,32 @@
+Component,Level,Name,Required,Type,Description,Example >>
+Device ,0,,,object
+(device.json),1,device_internal_id,Yes,string,Unique ID of the device,(automatic)
+,1,device_manufacturer,Yes,string,Manufacturer of the device,LYS Technologies,"Condor Instruments, São Paolo, Brazil"
+,1,device_model,Yes,string,Model of the device,LYS Button,ActLumus
+,1,device_serial_number,Yes,string,Serial number of the device,S300449,"01640, 02916, 01740, 01607, 01020, 02540, 02663, 02793, 01382"
+,1,device_calibration,Yes,string,Date the device was last calibrated,2024-03-02,? Not calibrated?
+,1,device_sensor,No,array of objects,Individual sensors,-,"Accelerometer, wrist temperature, photopic and melanopic light sensor and RGB+IR"
+,2,device_sensor_type,Yes,string,Type of the sensor,-,?
+,2,device_sensor_datasheet,No,object |,Sensor datasheet information,-
+,,,,device_datasheet.json
+,1,device_datasheet,Yes,object |,Device datasheet information,(see below)
+,,,,device_datasheet.json
+
+
+Component,Level,Name,Required,Type,Description
+Device/Sensor,0,,,object,,(Only if information is available)
+Datasheet,1,datasheet_manufacturer,Yes,string,Manufacturer of the sensor/device,LYS Technologies,"Condor Instruments, São Paolo, Brazil"
+(device_datasheet.json),1,datasheet_type,Yes,string,Type of the sensor/device,wearable device,wearable device
+,1,datasheet_model,Yes,string,Model of the sensor/device,LYS Button,ActLumus
+,1,Datasheet_calibration_interval,Yes,number,Required device calibration interval (in days),730,Not available
+,1,datasheet_calibration_spectral_sensitivity,Yes,Array of objects,Information about spectral sensitivity calibration,,Not available
+,2,datasheet_calibration_spectral_sensitivity_,Yes,number,Wavelength (nm),,Not available
+,,wavelength
+,2,datasheet_calibration_spectral_sensitivity_,Yes,number,Relative spectral sensititivty at given wavelength,,Not available
+,,relative
+,1,datasheet_calibration_linearity,Yes,string,Information about linearity calibration,,Not available
+,1,datasheet_calibration_directional_response,Yes,string,Information about directional response calibration,,Not available
+
+
+
+

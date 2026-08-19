@@ -1,0 +1,8 @@
+"Id","bedtime","sleepprep","wake","out_ofbed","sleepdelay","awakenings","awake_duration","sleepquality","daytype2","comments","sleep","sleep_duration","comments_english"
+"MPI_S226","2023-10-31 01:15:00","2023-10-31 01:20:00","2023-10-31 07:30:00","2023-10-31 07:35:00",5,2,30,4,2,"I'm trying to get used to remembering what happened at which time.","2023-10-31 01:25:00",6.08333333333333,"I'm trying to get used to remembering what happened at which time."
+"MPI_S226","2023-11-01 01:55:00","2023-11-01 01:55:00","2023-11-01 08:58:00","2023-11-01 09:15:00",5,3,10,5,1,"Today it's holiday","2023-11-01 02:00:00",6.96666666666667,"Today it's holiday"
+"MPI_S226","2023-11-02 04:38:00","2023-11-02 04:38:00","2023-11-02 07:59:00","2023-11-02 08:04:00",5,2,5,1,2,"Had lots of assignments","2023-11-02 04:43:00",3.26666666666667,"Had lots of assignments"
+"MPI_S226","2023-11-02 23:30:00","2023-11-02 23:56:00","2023-11-03 07:28:00","2023-11-03 08:08:00",3,1,5,5,2,"I slept well after being very tired.","2023-11-02 23:59:00",7.48333333333333,"I slept well after being very tired."
+"MPI_S226","2023-11-04 04:15:00","2023-11-04 04:15:00","2023-11-04 09:45:00","2023-11-04 09:52:00",3,1,2,4,1,"Last night tried to advance on university assignments","2023-11-04 04:18:00",5.45,"Last night tried to advance on university assignments"
+"MPI_S226","2023-11-05 03:00:00","2023-11-05 04:35:00","2023-11-05 08:40:00","2023-11-05 09:05:00",5,1,5,3,1,"Watched a TV show until late","2023-11-05 04:40:00",4,"Watched a TV show until late"
+"MPI_S226","2023-11-06 00:10:00","2023-11-06 00:35:00","2023-11-06 05:55:00","2023-11-06 06:42:00",5,2,60,2,2,"Roomie was very noisy last night","2023-11-06 00:40:00",5.25,"Roomie was very noisy last night"

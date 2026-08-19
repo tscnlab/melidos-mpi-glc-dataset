@@ -1,0 +1,7 @@
+"Id","Date","instructions","intensity","location","type","commute","sedentary","light_glasses","startdate_3","enddate_3","type_english"
+"MPI_S224","2023-10-30",1,3,1,"Walking, fairly fast speed. uphill parts of it",,360,,"2023-10-31 00:19:00","2023-10-31 00:20:00","Walking, fairly fast speed, includes uphill sections"
+"MPI_S224","2023-10-31",1,3,1,"45",,360,,"2023-11-01 00:08:00","2023-11-01 00:09:00",
+"MPI_S224","2023-11-01",1,2,2,"home workout (bodyweight and resistance bands)",,600,,"2023-11-02 00:01:00","2023-11-02 00:03:00","home workout (bodyweight and resistance bands)"
+"MPI_S224","2023-11-02",1,3,1,"walking",,360,,"2023-11-03 00:33:00","2023-11-03 00:33:00","walking"
+"MPI_S224","2023-11-03",1,2,2,"bodyweight exercises and resistance band exercises",,600,,"2023-11-04 01:18:00","2023-11-04 01:19:00","bodyweight exercises and resistance band exercises"
+"MPI_S224","2023-11-05",1,3,1,"walking",,240,,"2023-11-06 00:15:00","2023-11-06 00:16:00","walking"

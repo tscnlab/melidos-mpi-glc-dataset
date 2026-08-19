@@ -1,0 +1,96 @@
+[
+  {
+    "schema_version": "3.0.2",
+    "study_internal_id": "MELIDOS_MPI_2025",
+    "study_title": "Personal light exposure dataset for Tuebingen, Germany",
+    "study_ethics": "Ethics Committee of the Technical University of Munich (2023-115-S-KK)",
+    "study_short_description": "Near-corneal-plane light exposure and contextual, environmental, behavioural, sleep, and questionnaire data collected in healthy adults in everyday life.",
+    "study_sample": "Thirty participants were enrolled; twenty-six healthy adults aged 18–55 years were retained in the published repository.",
+    "study_setting": "Real-world field study",
+    "study_geographical_location": "Tuebingen, Germany, urban setting",
+    "study_contributors": [
+      {
+        "contributor_full_name": "Carolina Guidolin",
+        "contributor_roles": [
+          "Conceptualization",
+          "Data collection"
+        ],
+        "contributor_email": "carolina.guidolin@tuebingen.mpg.de",
+        "contributor_orcid": "https://orcid.org/0009-0007-4959-2667",
+        "contributor_institution": {
+          "contributor_institution_name": "Max Planck Institute for Biological Cybernetics",
+          "contributor_institution_city": "Tuebingen",
+          "contributor_institution_country": "Germany"
+        }
+      },
+      {
+        "contributor_full_name": "Johannes Zauner",
+        "contributor_roles": [
+          "Data curation",
+          "Software",
+          "Validation"
+        ],
+        "contributor_email": "johannes.zauner@tum.de",
+        "contributor_orcid": "https://orcid.org/0000-0003-2171-4566",
+        "contributor_institution": {
+          "contributor_institution_name": "Technical University of Munich",
+          "contributor_institution_city": "Munich",
+          "contributor_institution_country": "Germany"
+        }
+      },
+      {
+        "contributor_full_name": "Manuel Spitschan",
+        "contributor_roles": [
+          "Conceptualization",
+          "Supervision"
+        ],
+        "contributor_email": "manuel.spitschan@tum.de",
+        "contributor_orcid": "https://orcid.org/0000-0002-8572-9268",
+        "contributor_institution": {
+          "contributor_institution_name": "Technical University of Munich",
+          "contributor_institution_city": "Munich",
+          "contributor_institution_country": "Germany"
+        }
+      }
+    ],
+    "study_datasets": [
+      "MELIDOS_MPI_S201",
+      "MELIDOS_MPI_S202",
+      "MELIDOS_MPI_S204",
+      "MELIDOS_MPI_S205",
+      "MELIDOS_MPI_S206",
+      "MELIDOS_MPI_S208",
+      "MELIDOS_MPI_S209",
+      "MELIDOS_MPI_S210",
+      "MELIDOS_MPI_S212",
+      "MELIDOS_MPI_S213",
+      "MELIDOS_MPI_S214",
+      "MELIDOS_MPI_S215",
+      "MELIDOS_MPI_S216",
+      "MELIDOS_MPI_S218",
+      "MELIDOS_MPI_S219",
+      "MELIDOS_MPI_S221",
+      "MELIDOS_MPI_S222",
+      "MELIDOS_MPI_S223",
+      "MELIDOS_MPI_S224",
+      "MELIDOS_MPI_S225",
+      "MELIDOS_MPI_S226",
+      "MELIDOS_MPI_S227",
+      "MELIDOS_MPI_S228",
+      "MELIDOS_MPI_S229",
+      "MELIDOS_MPI_S230",
+      "MELIDOS_MPI_S231",
+      "MELIDOS_MPI_AMBIENT"
+    ],
+    "study_type": "field study",
+    "study_keywords": [
+      "light exposure",
+      "circadian",
+      "wearable sensor",
+      "MeLiDos",
+      "Tuebingen",
+      "Germany"
+    ],
+    "study_preregistration": "https://doi.org/10.5281/zenodo.16895188"
+  }
+]
