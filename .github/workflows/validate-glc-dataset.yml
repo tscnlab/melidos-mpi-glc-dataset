@@ -14,6 +14,6 @@ permissions:
 
 jobs:
   validate:
-    uses: tscnlab/glc-metadata-validator/.github/workflows/validate.yml@v0.5.2
+    uses: GlobalLightCommons/glc-framework/.github/workflows/validate.yml@dfd412d54091a70abc597925a5e48c6b71404a08 # framework-v0.1.0
     with:
       datapackage: datapackage.json
